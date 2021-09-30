@@ -24,6 +24,7 @@ PaQL Package Query Results Recreation
 5) Generate results:
     - run dataset_size_analysis.py to get results of Direct and SketchRefine (includes both k-dim Quad tree and kmeans partitioning) for different dataset sizes
     - run partition_threshhold_analysis.py to get results of SketchRefine with different partition threshold sizes.
+    - Results and summary in PaQL Reproducibility Paper.pdf
 
 
 
