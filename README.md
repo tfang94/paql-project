@@ -1,4 +1,8 @@
 # paql-project
+
+This was a group project with two other MS students (Neeraj Sharma, Ananya Gupta) for our Databases Implementation and Design class.  We implemented the algorithms described in a publication on higher order SQL queries (Source: https://people.cs.umass.edu/~ameli/projects/packageBuilder/papers/scalable-paql.pdf) and reproduced the results described.  The premise is that traditional SQL queries are highly limited in their capacity for queries of a combinatorial nature (ex. designing a meal plan with multiple constraints).  Not only is it difficult and convoluted to express the syntax, the feasibility/performance suffer immensely as data is scaled up.  A new improved algorithm (Sketch Refine) is proposed which uses a divide-and-conquer type approach along with clustering to not only dramatically increase runtime, but also ensure scalability, while maintaining high quality solutions.  We validated our results on the TPC-H dataset, containing over 6 million rows, on four different queries.  Our final write-up "PaQL Reproducibility Paper.pdf" provides much more in-depth explanation along with our results.  Beneath is the instructions on how to run our algorithm along with reproducing the results.
+
+
 PaQL Package Query Results Recreation
 
 1) Requirements:
@@ -7,7 +11,6 @@ PaQL Package Query Results Recreation
      - Download tpch.csv from http://avid.cs.umass.edu/courses/645/s2021/project/paql_data/tpch.csv and put in data folder inside src directory.
      - pip install -r requirements.txt
      - setup.py file and cplex folder in src directory are copied from Applications folder to run with cplex. 
-     - Source paper: https://people.cs.umass.edu/~ameli/projects/packageBuilder/papers/scalable-paql.pdf 
 
 2) Direct Method:
    - Implementation of direct method using cplex is in src/direct.py
